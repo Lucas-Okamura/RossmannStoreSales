@@ -112,7 +112,7 @@ After tunning the hyperparameters of the XGBoost model, the following metrics we
 
 |    Model Name        |     MAE      |    MAPE    |     RMSE       |
 |:--------------------:|:------------:|:----------:|:--------------:|
-|  XGBoost Regressor   |   661.456    |   0.0956   |   957.59       |
+|  XGBoost Regressor   |   681.94    |   0.0984   |   989.65       |
 
 As it can be seen, a better hyperparameter selection can improve the model's score significantly.
 
@@ -125,18 +125,18 @@ In terms of business, MAE means how much the prediction is wrong, defining upper
 The table below shows the worst store predictions, explaining that some stores are more difficult to predict sales. The worst_scenario field is calculated by subtracting the MAE from the predictions field and the best_scenario field is calculated by adding the MAE field.
 
 
-|   store |   predictions |   worst_scenario |   best_scenario |     MAE |     MAPE |
-|--------:|--------------:|-----------------:|----------------:|--------:|---------:|
-|     292 |        105553 |           102290 |          108815 | 3262.47 | 0.549639 |
-|     909 |        235814 |           228031 |          243598 | 7783.92 | 0.533829 |
-|     876 |        197499 |           193492 |          201505 | 4006.52 | 0.304617 |
-|     722 |        342855 |           341137 |          344573 | 1717.82 | 0.231807 |
-|     782 |        216000 |           215253 |          216747 |  746.91 | 0.220037 |
+|   store |   predictions |   worst_scenario |   best_scenario |      MAE |     MAPE |
+|--------:|--------------:|-----------------:|----------------:|---------:|---------:|
+|     292 |        106565 |           103268 |          109862 | 3297.37  | 0.569281 |
+|     909 |        244182 |           236583 |          251781 | 7599.03  | 0.52865  |
+|     876 |        208512 |           204377 |          212646 | 4134.56  | 0.316803 |
+|     274 |        196566 |           195245 |          197887 | 1321.07  | 0.225985 |
+|     610 |        177417 |           176601 |          178234 |  816.744 | 0.214994 |
 
 Finally, the table below shows the sum for all stores, as well as the worst and best scenarios:
 
 | Scenario       | Values           |
 |:---------------|:-----------------|
-| predictions    | R$282,513,888.00 |
-| worst_scenario | R$281,772,260.98 |
-| best_scenario  | R$283,255,526.38 |
+| predictions    | R$283,690,432.00 |
+| worst_scenario | R$282,926,582.14 |
+| best_scenario  | R$284,454,331.65 |
