@@ -26,11 +26,11 @@ Rossmann's is a big European drugstore. It operates over 3,000 drug stores in 7 
 
 * **How will the solution be?**
 
-    * Granularity \\(\rightarrow\\) daily sales for 6 weeks / store
+    * Granularity: daily sales for 6 weeks / store
 
-    * Problem type \\(\rightarrow\\) sales forecasting, regression problem
+    * Problem type: sales forecasting, regression problem
 
-    * How will the solution be delivered? \\(\rightarrow\\) Telegram API (via cellphone)
+    * How will the solution be delivered? Telegram API (via cellphone)
 
 # 
 
@@ -112,7 +112,7 @@ After tunning the hyperparameters of the XGBoost model, the following metrics we
 
 |    Model Name        |     MAE      |    MAPE    |     RMSE       |
 |:--------------------:|:------------:|:----------:|:--------------:|
-|  XGBoost Regressor   |   681.94    |   0.0984   |   989.65       |
+|  XGBoost Regressor   |   673.231   |   0.0981   |   971.177      |
 
 As it can be seen, a better hyperparameter selection can improve the model's score significantly.
 
@@ -127,16 +127,16 @@ The table below shows the worst store predictions, explaining that some stores a
 
 |   store |   predictions |   worst_scenario |   best_scenario |      MAE |     MAPE |
 |--------:|--------------:|-----------------:|----------------:|---------:|---------:|
-|     292 |        106565 |           103268 |          109862 | 3297.37  | 0.569281 |
-|     909 |        244182 |           236583 |          251781 | 7599.03  | 0.52865  |
-|     876 |        208512 |           204377 |          212646 | 4134.56  | 0.316803 |
-|     274 |        196566 |           195245 |          197887 | 1321.07  | 0.225985 |
-|     610 |        177417 |           176601 |          178234 |  816.744 | 0.214994 |
+|     292 |        106432 |           103187 |          109676 | 3244.1   | 0.540158 |
+|     909 |        237072 |           229403 |          244741 | 7669.19  | 0.525477 |
+|     876 |        204843 |           200764 |          208922 | 4079.01  | 0.317596 |
+|     841 |        117860 |           117194 |          118525 |  665.593 | 0.246496 |
+|     274 |        193381 |           191986 |          194776 | 1395.14  | 0.238248 |
 
 Finally, the table below shows the sum for all stores, as well as the worst and best scenarios:
 
 | Scenario       | Values           |
 |:---------------|:-----------------|
-| predictions    | R$283,690,432.00 |
-| worst_scenario | R$282,926,582.14 |
-| best_scenario  | R$284,454,331.65 |
+| predictions    | R$285,479,232.00 |
+| worst_scenario | R$284,724,779.16 |
+| best_scenario  | R$286,233,663.78 |
