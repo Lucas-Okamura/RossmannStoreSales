@@ -1,6 +1,6 @@
 # Rossmann Store - Forecasting Sales
 
-![](img/rossmann.png)
+![](img/rossmann.jpg)
 
 #
 
