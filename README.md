@@ -140,3 +140,12 @@ Finally, the table below shows the sum for all stores, as well as the worst and 
 | predictions    | R$285,479,232.00 |
 | worst_scenario | R$284,724,779.16 |
 | best_scenario  | R$286,233,663.78 |
+
+#
+
+# 7. Working Telegram Bot
+
+Those predictions are available via Telegram API, whose information get is shown below.
+
+![](img/telegram_bot.png)
+
